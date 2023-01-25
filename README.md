@@ -1,4 +1,4 @@
-# LAB - Number
+# LAB - Number 2
 
 ## Project Name
 
@@ -18,4 +18,4 @@ I want to build an about me site with a direct and powerful purpose. It prompts 
 ### Reflections and Comments
 
 * This segment was pretty challenging but I look forward to continuing to bend my learning curve!
-* 
+* Ready and set for tommorrows class!
