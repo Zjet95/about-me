@@ -19,3 +19,10 @@ I want to build an about me site with a direct and powerful purpose. It prompts 
 
 * This segment was pretty challenging but I look forward to continuing to bend my learning curve!
 * Ready and set for tommorrows class!
+
+### Lab 4 - Pair programming
+
+* We broke the game into three components, with each game set into separate functions.
+
+Driver: Jonathan Tsai
+Navigator: Zach Jeter
