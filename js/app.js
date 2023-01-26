@@ -82,27 +82,36 @@ let howmanydogsdoihave = parseInt(prompt('Guess how many dogs I have between 1-1
 let x = 2; //numberofDogsIhave
 let i = 4; //attemptsremain
 while(i > 0){
-  if (howmanydogsdoihave === x ){
+  if (howmanydogsdoihave === 2 ){
     console.log('You guessed it i have 2 dogs!');
     alert('You guessed it i have 2 dogs!');
     score++;
     break;
   }
+  else if (i === 0){
+    console.log('you are out of attempts');
+    alert('you are out of attempts');
+    break;
+  }
   else if (howmanydogsdoihave < 0){
     console.log('That number is not between 1-10, try again: ');
     howmanydogsdoihave = parseInt(prompt('That number is not between 1-10, try again: '));
+    i--;
   }
   else if (howmanydogsdoihave > 10){
     console.log('That number is not between 1-10, try again: ');
     howmanydogsdoihave = parseInt(prompt('That number is not between 1-10, try again: '));
+    i--;
   }
   else if (howmanydogsdoihave > x){
     console.log('Too high try again');
     howmanydogsdoihave = parseInt(prompt('Too high try again'));
+    i--;
   }
   else if (howmanydogsdoihave < x){
     console.log('Too low try again');
     howmanydogsdoihave = parseInt(prompt('Too low try again'));
+    i--;
   }
  
   else {
