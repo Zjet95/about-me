@@ -31,7 +31,7 @@ let doIhaveFavLang = prompt("Do I have a favorite programming language? yes or n
 
 if (doIhaveFavLang === 'yes' || doIhaveFavLang === 'y'){
   console.log('I love javascript!')
-alert('I love javascript!')
+  alert('I love javascript!')
 } else if (doIhaveFavLang ==='no' || doIhaveFavLang ==='n'){
   console.log ('Nope, I like javascript!')
   alert('Nope, I like javascript!')
@@ -66,7 +66,7 @@ if (smalltownorbigtown === 'yes' || smalltownorbigtown === 'yes'){
   console.log ('I am actually from a small town of 7k residents')
   alert('I am actually from a small town of 7k residents')
 }
-  let howmanydogsdoihave = parseInt(prompt('Guess how many dogs I have between 1-10? '));
+let howmanydogsdoihave = parseInt(prompt('Guess how many dogs I have between 1-10? '));
 let x = 2; //numberofDogsIhave
 let i = 4; //attemptsremain
 while(i > 0){
@@ -75,7 +75,7 @@ while(i > 0){
     alert('You guessed it i have 2 dogs!');
     break;
   }
-     else if (howmanydogsdoihave < 0){
+  else if (howmanydogsdoihave < 0){
     console.log('That number is not between 1-10, try again: ');
     howmanydogsdoihave = parseInt(prompt('That number is not between 1-10, try again: '));
   }
@@ -95,13 +95,43 @@ while(i > 0){
   else {
     console.log('That is not a number, try again: ');
     howmanydogsdoihave = parseInt(prompt('That is not a number, try again: '));
-  i--;
+    i--;
+  }
+  let favCompany = ['baker', 'enjoi', 'element', 'chocolate'];
+  let guessCompany = prompt('What Skate Company do I like?');
+  let guessAttempts = 6;
+  let userCorrect = false;
+
+  // need to user input in color array
+  while (guessAttempts) {
+    guessAttempts--;
+    alert(`you have ${guessAttempts} attempts left.`);
+
+    for (let i = 0; i < favCompany.length; i++) {
+      if (guessCompany === 'baker') {
+        userCorrect = true;
+      }
+    }
+    if (userCorrect === true) {
+    // score++;
+      userCorrect = false;
+      alert("correct");
+      break;
+    } else if (guessAttempts > 0) {
+      alert("sorry, guess again");
+      guessCompany = prompt('What company do I like?');
+    }
+
   }
 
+
+  alert('Thank you for learning more about me ' + username)
 }
 
 
-alert('Thank you for learning more about me ' + username)
+
+
+
 
 
 
