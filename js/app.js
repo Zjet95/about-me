@@ -66,8 +66,43 @@ if (smalltownorbigtown === 'yes' || smalltownorbigtown === 'yes'){
   console.log ('I am actually from a small town of 7k residents')
   alert('I am actually from a small town of 7k residents')
 }
+  let howmanydogsdoihave = parseInt(prompt('Guess how many dogs I have between 1-10? '));
+let x = 2; //numberofDogsIhave
+let i = 4; //attemptsremain
+while(i > 0){
+  if (howmanydogsdoihave === x ){
+    console.log('You guessed it i have 2 dogs!');
+    alert('You guessed it i have 2 dogs!');
+    break;
+  }
+     else if (howmanydogsdoihave < 0){
+    console.log('That number is not between 1-10, try again: ');
+    howmanydogsdoihave = parseInt(prompt('That number is not between 1-10, try again: '));
+  }
+  else if (howmanydogsdoihave > 10){
+    console.log('That number is not between 1-10, try again: ');
+    howmanydogsdoihave = parseInt(prompt('That number is not between 1-10, try again: '));
+  }
+  else if (howmanydogsdoihave > x){
+    console.log('Too high try again');
+    howmanydogsdoihave = parseInt(prompt('Too high try again'));
+  }
+  else if (howmanydogsdoihave < x){
+    console.log('Too low try again');
+    howmanydogsdoihave = parseInt(prompt('Too low try again'));
+  }
+ 
+  else {
+    console.log('That is not a number, try again: ');
+    howmanydogsdoihave = parseInt(prompt('That is not a number, try again: '));
+  i--;
+  }
+
+}
+
 
 alert('Thank you for learning more about me ' + username)
+
 
 
 
