@@ -17,9 +17,9 @@ let username = prompt('What is your name?');
 
 alert('Welcome ' + username);
 
-game1();
+// game1();
 game2();
-game3();
+// game3();
 
 alert(`your score is ${score} out of 7`);
 
@@ -102,38 +102,54 @@ function game2() {
       score++;
       break;
     }
-    else if (i === 0) {
-      console.log('you are out of attempts');
-      alert('you are out of attempts');
-      break;
-    }
     else if (howmanydogsdoihave < 0) {
       console.log('That number is not between 1-10, try again: ');
       howmanydogsdoihave = parseInt(prompt('That number is not between 1-10, try again: '));
       i--;
+      if (i === 0){
+        alert('you are out of attempts');
+        break;
+      }
     }
     else if (howmanydogsdoihave > 10) {
       console.log('That number is not between 1-10, try again: ');
       howmanydogsdoihave = parseInt(prompt('That number is not between 1-10, try again: '));
       i--;
+      if (i === 0){
+        alert('you are out of attempts');
+        break;
+      }
     }
     else if (howmanydogsdoihave > x) {
       console.log('Too high try again');
       howmanydogsdoihave = parseInt(prompt('Too high try again'));
       i--;
+      if (i === 0){
+        alert('you are out of attempts');
+        break;
+      }
     }
     else if (howmanydogsdoihave < x) {
       console.log('Too low try again');
       howmanydogsdoihave = parseInt(prompt('Too low try again'));
       i--;
+      if (i === 0){
+        alert('you are out of attempts');
+        break;
+      }
     }
     else {
       console.log('That is not a number, try again: ');
       howmanydogsdoihave = parseInt(prompt('That is not a number, try again: '));
       i--;
+      if (i === 0){
+        alert('you are out of attempts');
+        break;
+      }
     }
   }
 }
+
 
 function game3() {
   let favCompany = ['baker', 'enjoi', 'element', 'chocolate'];
