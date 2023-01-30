@@ -31,3 +31,9 @@ I want to build an about me site with a direct and powerful purpose. It prompts 
 
 Driver: Jonathan Tsai
 Navigator: Zach Jeter
+
+## Lab 5 - About Me Project Finsihed.
+
+![Lighthouse Lab 5 Score](img/Screenshot%202023-01-29%20at%2011.44.png)
+
+
